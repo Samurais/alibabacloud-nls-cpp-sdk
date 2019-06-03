@@ -1,3 +1,4 @@
+add_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
 
 #if(${ENABLE_BUILD_LINUX} OR ${ENABLE_BUILD_ANDROID})
 if(${ENABLE_BUILD_LINUX})
@@ -50,7 +51,7 @@ if(${ENABLE_BUILD_LINUX})
             ${openssl_install_dir}/lib/libcrypto.so
             ${uuid_install_dir}/lib/libuuid.so
             pthread
-            ${jsoncpp_install_dir}/lib/libjsoncpp.so
+            ${jsoncpp_install_dir}/lib/x86_64-linux-gnu/libjsoncpp.so
             ${nlsTokenLib})
 endif()
 

@@ -266,7 +266,7 @@ if(${ENABLE_BUILD_LINUX})
             ${openssl_install_dir}/lib/libcrypto.so
             ${uuid_install_dir}/lib/libuuid.so
             pthread
-            ${jsoncpp_install_dir}/lib/libjsoncpp.so)
+            ${jsoncpp_install_dir}/lib/x86_64-linux-gnu/libjsoncpp.so)
 elseif(${ENABLE_BUILD_WINDOWS})
     set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/build_windows_sdk/install/CppSdk2.x)
 endif()
@@ -352,7 +352,7 @@ function(installCommonFiles)
 
     #jsoncpp
     install(DIRECTORY
-            ${jsoncpp_install_dir}/lib/
+            ${jsoncpp_install_dir}/lib/x86_64-linux-gnu
             DESTINATION
             ${CMAKE_INSTALL_PREFIX}/${LIB_INSTALL_PLATFORM}/${CMAKE_INSTALL_LIBDIR}
             FILES_MATCHING PATTERN "lib*.so*")

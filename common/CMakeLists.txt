@@ -2,7 +2,7 @@
 include(ExternalProject)
 include(GNUInstallDirs)
 
-set(JSONCPP_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+set(JSONCPP_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++98 -fPIC")
 ExternalProject_Add(jsoncpp
             PREFIX jsoncpp
             DOWNLOAD_NAME jsoncpp-0.10.6.tar.gz

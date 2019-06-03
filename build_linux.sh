@@ -1,6 +1,9 @@
 #!/bin/bash
 
-build_folder=$PWD/build_linux_sdk
+# constants
+baseDir=$(cd `dirname "$0"`;pwd)
+
+build_folder=$baseDir/build_linux_sdk
 if [ ! -d $build_folder ];then
     mkdir -p $build_folder
 fi

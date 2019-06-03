@@ -442,7 +442,7 @@ int speechTranscriberFile(const char* appkey) {
     ParamStruct pa;
     pa.token = g_token;
     pa.appkey = appkey;
-    pa.fileName = "test0.wav";
+    pa.fileName = "/workspace/tmp/alibabacloud-nls-cpp-sdk/1-eng.wav";
 
     pthread_t pthreadId;
 

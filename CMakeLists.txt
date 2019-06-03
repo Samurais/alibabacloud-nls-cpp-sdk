@@ -4,7 +4,6 @@ cmake_minimum_required(VERSION 3.1)
 file(STRINGS "${CMAKE_SOURCE_DIR}/version" version)
 project(nlsCppSdk2.0 VERSION ${version})
 message(STATUS "Project version: ${PROJECT_VERSION}")
-
 message("CMAKE_SYSTEM_NAME: ${CMAKE_SYSTEM_NAME}")
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
